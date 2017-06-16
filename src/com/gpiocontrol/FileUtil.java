@@ -17,12 +17,12 @@ class FileUtil {
 
     static BufferedReader getBufferedReader(String file) throws FileNotFoundException {
         FileInputStream inputStream = new FileInputStream(file);
-        InputStreamReader isReader = new InputStreamReader(inputStream);
-        return new BufferedReader(isReader);
+        InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+        return new BufferedReader(inputStreamReader);
     }
 
     static BufferedWriter getBufferedWriter(String file) throws IOException {
-        FileWriter fWriter = new FileWriter(file);
-        return new BufferedWriter(fWriter);
+        FileWriter fileWriter = new FileWriter(file);
+        return new BufferedWriter(fileWriter);
     }
 }

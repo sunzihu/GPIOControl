@@ -31,7 +31,7 @@ public class GPIOControl {
      */
     public void export() throws IOException {
         if (!isExport()) {
-            FileUtil.append(GPIODefine.gpioRootDirectory + "/" + GPIODefine.gpioExportFileName, String.valueOf(pinNum));
+            FileUtil.append(GPIODefine.gpioExportFilePath, String.valueOf(pinNum));
         }
     }
 
@@ -42,7 +42,7 @@ public class GPIOControl {
      */
     public void unExport() throws IOException {
         if (isExport()) {
-            FileUtil.append(GPIODefine.gpioRootDirectory + "/" + GPIODefine.gpioUnExportFileName, String.valueOf(pinNum));
+            FileUtil.append(GPIODefine.gpioUnExportFilePath, String.valueOf(pinNum));
         }
     }
 
