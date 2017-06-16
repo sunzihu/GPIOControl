@@ -18,7 +18,7 @@ public class GPIOControl {
 
     /**
      * Get this pin's state.
-     * @return Pin connection state, if connection, it's return true.
+     * @return This is the pin connection state, if connection, it's return true.
      */
     public boolean isExport() {
         return gpioDirectoryFile.exists();
